@@ -1,167 +1,144 @@
 body {
     background-image: url("background.webp");
-    background-size: contain;
-    width: 700px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
+ header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ header img{
+    width: 400px;
+    border-radius: 50%;
+ }
 #Heading {
     color: rgb(230, 43, 193);
     font-weight: 900;
     font-family: sans-serif;
-    font-size: 50px;
-    line-height: 50px;
-    text-align: left ;
+    font-size: 4vw;
 }
-#f{
-    font-size: 58px;
-    font-weight: 900;
-    font-family: ui-rounded;
-    color: rgba(134, 10, 159, 0.773);
-    text-align: right;
-    position: relative;
-    left: 920px;
-    bottom: 540px;
-}
-#d{
-    font-size: 80px;
-    font-weight: 900;
-    color: rgba(50, 3, 59, 0.773);
-    text-align: right;
-    position: relative;
-    left: 980px;
-    bottom: 630px;
-}
+
 h2 {
     color: rgb(74, 35, 111);
     font-family: cursive;
     font-size: 48px;
-    position: relative;
-    bottom: 50px;
 }
+
 h3 {
     color: rgb(125, 57, 189);
     font-size: 40px;
     text-decoration: underline;
+    text-align: left;
+}
+
+
+#flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#flex-container img{
+    max-width: 300px;
 }
 #abtme {
-    font-size: 37px;
+    font-size: 2vw;
     font-weight: 600;
     font-family: Cambria;
     font-style: italic bold;
-    height: 495px;
-    width: 1130px;
     border: 2px solid black;
     border-radius: 20px;
+    padding: 10px;
     background-color: antiquewhite;
 }
+
 #image {
-    width: 600px;
     background-image: url("mypic2.webp");
     background-size: cover;
     border-radius: 50%;
-    position: relative;
-    left: 1220px;
-    bottom: 540px;
-    height: 200px;
+    padding: 20px;
 }
-hr {
-    position: relative;
-    bottom: 10px;
-}
+
 #gallery {
     text-align: center;
-    position: relative;
-    left: 550px;
-    bottom: 710px;
     color: rgb(125, 57, 189);
     font-size: 40px;
 }
+
 #interesth {
-    position: relative;
-    bottom: 510px;
+    text-align: center;
 }
+
 #interest-qual {
-    width: 1800px;
-    height: 700px;
-    position: relative;
-    bottom: 550px;
     display: flex;
     justify-content: space-around;
 }
+
 #interests {
-    font-size: 37px;
+    font-size: 2vw;
     font-weight: 600;
     font-family: Cambria;
     font-style: italic bold;
-    height: 970px;
-    width: 1130px;
     border: 2px solid black;
     border-radius: 20px;
+    padding: 10px;
     background-color: antiquewhite;
-    position: relative;
-    top: 40px;
-    right: 68px;
 }
-#qhd {
-    position: relative;
-    bottom: 90px;
-}
+
 #qualifications {
-    height: 700px;
-    width: 400px;
+    padding: 20px;
 }
-#flex-container {
-    width: 1800px;
-    height: 700px;
-    display: flex;
-    position: relative;
-    bottom: 600px;
-    justify-content: space-evenly;
+
+#qhd {
+    text-align: center;
 }
-#pic1,#pic2,#pic3 {
-    height: 700px;
-    width: 550px;
-    background-color: black;
-}
-#pic1 {
-    background-image: url("image1.avif");
-    background-size: cover;
-}
-#pic2 {
-    background-image: url("image2.jpg");
-    background-size: cover;
-}
-#pic3 {
-    background-image: url("image3.avif");
-    background-size: cover;
-}
+
 table {
-    height: 70px;
-    width: 70px;
-    font-size: 50px;
+    font-size: 20px;
     font-family: Calibri;
     font-weight: 900;
-    color: rgb(227, 119, 119);
-    position: relative;
-    right: 30px;
+    color: rgb(89, 43, 43);
 }
+
 .sec {
     text-align: right;
 }
-#r1 {
-    position: relative;
-    bottom: 80px;
-}
-#r2 {
-    position: relative;
-    bottom: 179px;
-}
+
 #contact {
     background-color: black;
-    width: 1815px;
-    position: relative;
-    bottom: 90px;
-    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
 }
+
 #info-bar {
-    font-size: 37px;
+    font-size: 2vw;
+    text-align: center;
+}
+
+
+@media screen and (max-width:800px) {
+    #flex-container{
+      
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #flex-container img{
+        margin-top: 5%;
+        
+    }
+    #interest-qual{
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+    }
+    header img {
+        width:350px;
+    }
+    #interests {
+        margin-left: 1%;
+    }
 }
